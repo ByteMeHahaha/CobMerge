@@ -13,6 +13,10 @@ A fixed-format COBOL app that merges pre-defined files.
 
 - [CobMerge](#cobmerge)
   - [Using the app](#using-the-app)
+    - [How it Works](#how-it-works)
+    - [Running CobMerge](#running-cobmerge)
+      - [Via the GitHub Release](#via-the-github-release)
+      - [Compiling from Source](#compiling-from-source)
   - [Note on CSV Data Used by the Program](#note-on-csv-data-used-by-the-program)
     - [Data Format](#data-format)
 
