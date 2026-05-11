@@ -20,12 +20,40 @@ A fixed-format COBOL app that merges pre-defined files.
 
 ## Using the app
 
+### How it Works
+
 This program sorts the user's input `.csv` files (as per COBOL's merging
 requirements), then merges them into a new `Output.csv` file.
+
+### Running CobMerge
+
+#### Via the GitHub Release
 
 All you have to do is run the `.exe` in the compressed folder provided, and
 follow the prompts. Note that the CSV data files will be overwritten when
 sorted.
+
+#### Compiling from Source
+
+If you have `cobc` and GnuCOBOL's runtime on your system, you can
+clone the app and compile it from source.
+
+This is done by:
+
+1. Cloning the app with `git clone`
+2. Navigating into the cloned project folder
+3. Navigating into `scripts`
+4. Running `build.cmd`
+
+For Linux users, run the following in the project root folder:
+
+```bash
+cobc -I ./src -x ./src/**.cbl -o ./bin/CobMerge  -w -q
+./bin/CobMerge
+```
+
+**NOTE**: The app has NOT been tested on Linux. Proceed with caution and make
+a GitHub issue for me to fix whatever the problem is.
 
 ## Note on CSV Data Used by the Program
 
